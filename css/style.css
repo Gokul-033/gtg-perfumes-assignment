@@ -1426,6 +1426,7 @@ body {
     min-width: 0;
 }
 
+
 .newsletter-input::placeholder {
     color: var(--white);
 }
