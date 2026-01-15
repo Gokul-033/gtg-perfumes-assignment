@@ -1667,7 +1667,7 @@ body {
     }
 
     .container {
-        padding: 0;
+        padding: 0 8px;
     }
 
     .hero-title {
@@ -1675,10 +1675,10 @@ body {
     }
 
     .product-gallery {
-        width: 100%;
-        max-width: 100%;
+        width: 92%;
+        max-width: 92%;
         overflow: hidden;
-        padding: 0 16px;
+        padding: 0;
         box-sizing: border-box;
     }
 
@@ -1695,15 +1695,11 @@ body {
     }
 
     .gallery-arrow-prev {
-        left: 8px;
+        left: 10px;
     }
 
     .gallery-arrow-next {
-        right: 8px;
-    }
-
-    .gallery-main {
-        overflow: visible;
+        right: 10px;
     }
 
     .gallery-thumbnails {
@@ -1716,7 +1712,7 @@ body {
     }
 
     .product-content {
-        padding: 0 16px;
+        padding: 0;
         box-sizing: border-box;
     }
 
