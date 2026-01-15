@@ -1656,6 +1656,12 @@ body {
 
 @media (max-width: 480px) {
 
+    html,
+    body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
     .hero .container {
         padding: 0 16px;
     }
@@ -1666,6 +1672,52 @@ body {
 
     .hero-title {
         font-size: 32px;
+    }
+
+    .product-gallery {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .gallery-main {
+        position: relative;
+        overflow: visible;
+        width: 100%;
+    }
+
+    .gallery-arrow {
+        width: 36px;
+        height: 36px;
+        z-index: 20;
+    }
+
+    .gallery-arrow-prev {
+        left: 8px;
+    }
+
+    .gallery-arrow-next {
+        right: 8px;
+    }
+
+    .gallery-main {
+        overflow: visible;
+    }
+
+    .gallery-thumbnails {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
+    .product-content {
+        padding: 0 16px;
+        box-sizing: border-box;
     }
 
     .stats-container {
@@ -1691,7 +1743,22 @@ body {
     }
 
     .footer-social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 12px;
+    }
+
+    .social-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
     }
 
     .newsletter-form {
