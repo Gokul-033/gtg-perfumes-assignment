@@ -242,8 +242,6 @@ if (statsSection && statsNumbers.length > 0) {
     observer.observe(statsSection);
 }
 
-
-// Add to Cart Dynamic Link
 function updateAddToCartLink() {
     const purchaseType = document.querySelector('input[name="purchaseType"]:checked')?.value || 'single';
     const addToCartBtn = document.getElementById('addToCartLink');
@@ -258,7 +256,6 @@ function updateAddToCartLink() {
         fragrance = `${frag1}-${frag2}`;
     }
 
-    // 9 variations for single, more for double
     const cartLinks = {
         'single-original': 'https://example.com/cart/single-original',
         'single-lily': 'https://example.com/cart/single-lily',
